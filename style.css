@@ -15,8 +15,8 @@ body {
   width: 1000px;
   position: fixed;
   border-radius: 50%;
-  right: 1250px;
-  bottom: 350px;
+  right: 1300px;
+  bottom: 485px;
   
   z-index: -1;
 }
@@ -24,9 +24,11 @@ body {
 .circle{
   background-color: #8A9EA0;
   height: 1000px;
-  width: 1000px;
+  width: 1200px;
   position: fixed;
   border-radius: 50%;
+  left: 1350px;
+  z-index: -1;
 }
 
 h1 {
@@ -58,50 +60,113 @@ h1{
   width: 650px;
 }
 
-.left.card.card>img{
-  width: 45%;
+.right.card{
+  position: relative;
   float: left;
+  left: 20px;
 }
 
 .right.card>img{
-  width: 45%;
   float: left;
+  width: 35%;
   position: relative;
-
+  left: 25%;
 }
 
-h2{
-  position: relative;
-  left: 5%;
+.right.card>.card-text{
+  margin: 0%;
+  width: 60%;
+  position: absolute;
+  left: 63%;
+  top: 35%;
 }
 
-.card-text{
-  width: 450px;
-  position: relative;
-  left: 45%;
-  bottom: 200px;
-  display: inline-block;
-  margin: 5%;
-  font-size: 20px;
+.right.card>.card-title{
+  margin: 0%;
+  position: absolute;
+  left: 63%;
+  top: 10%;
 }
 
 .left.card{
+  position: relative;
   float: left;
-  
+}
+
+.left.card>img{
+  width: 35%;
+  position: relative;
+}
+
+.left.card>.card-text{
+  margin: 0%;
+  width: 60%;
+  position: absolute;
+  left: 38%;
+  top: 35%;
+}
+
+.left.card>.card-title{
+  margin: 0%;
+  position: absolute;
+  left: 38%;
+  bottom: 70%;
+}
+
+@media (min-width:300px) and (max-width:1700px){
+
+.left.card{
+  left: 10%;
+  display: block;
+}
+
+.left.card>img{
+display: block;
+position: relative;
+left: 0%;
+width: 55%;
+margin-bottom: 20px;
+}
+
+.left.card>.card-title{
+position: static;
+}
+
+.left.card>.card-text{
+position: static;
 }
 
 .right.card{
-  position: relative;
+  top: 50px;
   left: 10%;
+  display: block;
 }
 
-footer>p{
-  float: left;
+.right.card>img{
+display: block;
+position: relative;
+left: 0%;
+margin-bottom: 20px;
+width: 50%;
 }
 
-@media (min-width: 360px) and (max-width:480px){
-  div{
-    width: 50%;
-    
-  }
+.right.card>.card-title{
+  position: static;
+  clear: both;
+}
+
+.right.card>.card-text{
+  position: static;
+  clear: both;
+}
+
+.circle{
+  left: 50%;
+}
+
+.circle2{
+  right: 50%;
+  bottom: 60%;
+}
+
 }
